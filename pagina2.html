@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PseudoCkases y Bootstrap</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Allura&family=Montserrat+Alternates:ital@1&family=Vina+Sans&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <!-- <header>
+        <nav>
+            <a href="#">Peliculas</a>
+            <a href="#">Series</a>
+            <a href="#">Documentales</a>
+
+
+        </nav>
+    </header> -->
+    <header>
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">CoderPelis</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a hreflang="nav-link active" aria-current="page" href="./index.html">Películas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Documentales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pagina2.html">Series</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Categorías
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Acción</a></li>
+                                <li><a class="dropdown-item" href="#">Aventura</a></li>
+                                <li><a class="dropdown-item" href="#">Romance</a></li>
+                                <li><a class="dropdown-item" href="#">Terror</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Géneros</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="tarjetas">
+            <img src="./media/serie the terror.jpg" alt="serie-the-terror">
+            <h2>The Terror</h2>
+            <p>
+                Impactante, llena de suspenso y basada en hechos reales, El Terror se centra en un peligroso viaje
+                    al ártico por parte de la Marina Real Británica. Es una historia de supervivencia extrema, en un
+                    paisaje totalmente implacable, con los temores de la tripulación exacerbados por una amenaza
+                    desconocida.
+
+                    2018
+                    10 episodios
+
+                    Histórico
+                    ·
+                    Suspenso
+                    ·
+                    Drama
+                    ·
+                    Terror
+
+            </p>
+        </div>
+        <div class="tarjetas">
+            <img src="./media/serie sherlock.jpg" alt="serie-sherlock">
+            <h2>Sherlock</h2>
+            <p>
+                Las aventuras de Sherlock Holmes y el doctor Watson llegan al Londres del siglo XXI.
+
+                2010
+                3 episodios
+
+                Suspense
+                ·
+                Drama
+            </p>
+        </div>
+
+        <div class="tarjetas">
+            <img src="./media/spiderman.jpeg" alt="Serie-the-good-doctor">
+            <h2>The Good Doctor</h2>
+            <p>
+                Se centra en un joven cirujano con síndrome de Savant quien es reclutado en la unidad de cirugía
+                    pediátrica de un prestigioso hospital. La pregunta surgirá: ¿Realmente puede salvar vidas una
+                    persona que no tiene la capacidad de relacionarse con otras personas?
+
+                    2019
+                    18 episodios
+
+
+
+                    Drama
+            </p>
+
+        </div>
+
+        <div class="tarjetas">
+            <img src="./media/serie la ley y el orden.jpeg" alt="serie-la-ley-y-el-orden">
+            <h2>La Ley y el Orden</h2>
+            <p>
+                Como comandante en funciones de la SVU, la teniente Olivia Benson (Mariska Hargitay) es una
+                    experimentada veterana de la unidad que lo ha visto todo
+
+                    2018
+                    54 episodios
+
+
+                    Suspense
+                    ·
+                    Acción
+                    ·
+                    Drama
+            </p>
+        </div>
+
+
+
+    </main>
+    <section class="container">
+        <h2>Seguir viendo</h2>
+        <div class="row">
+            <div>
+                <p>
+                    Selección personal
+                </p>
+            </div>
+            <div>
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="./media/rammstein.jpg" class="img-propia d-block w-100" alt="documental-ramstein.">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./media/interstellar2.jpg" class="img-propia d-block w-100" alt="pelicula-interstellar">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./media/docu jupiter.jpg" class="img-propia d-block w-100" alt="documental-jupiter">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                 
+            </div>
+        </div>
+
+
+    </section>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

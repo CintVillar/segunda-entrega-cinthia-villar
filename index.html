@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PseudoCkases y Bootstrap</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Allura&family=Montserrat+Alternates:ital@1&family=Vina+Sans&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <!-- <header>
+        <nav>
+            <a href="#">Peliculas</a>
+            <a href="#">Series</a>
+            <a href="#">Documentales</a>
+
+
+        </nav>
+    </header> -->
+    <header>
+       
+       
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">CoderPelis</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Películas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Documentales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pagina2.html">Series</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Categorías
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Acción</a></li>
+                                <li><a class="dropdown-item" href="#">Aventura</a></li>
+                                <li><a class="dropdown-item" href="#">Romance</a></li>
+                                <li><a class="dropdown-item" href="#">Terror</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Géneros</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="tarjetas">
+            <img src="./media/007.jpg" alt="skyfallcerocerosiete">
+            <h2>SkyFall007</h2>
+            <p>
+                2012 2hs 17m
+                Tras el fracaso de la última misión de Bond y revelarse la identidad de varios agentes secretos, la sede
+                del
+                MI6 es atacada, lo que obliga a M a trasladar su agencia. Estos sucesos hacen que su autoridad y
+                posición se
+                vean amenazadas por el nuevo Presidente del Comité de Inteligencia y Seguridad. Con el MI6 amenazado
+                desde
+                dentro y desde fuera, M acude al único aliado en quien puede confiar: Bond.
+            </p>
+        </div>
+        <div class="tarjetas">
+            <img src="./media/jhon wick.png" alt="jhon-wick-dos">
+            <h2>Jhon Wick 2</h2>
+            <p>
+                2017 2hs
+                En esta secuela del éxito de 2014, el legendario asesino John Wick (Keanu Reeves) se ve obligado a
+                salir del retiro por un ex-asociado que planea obtener el control de un misterioso grupo
+                internacional de asesinos. Obligado a ayudarlo por un juramento de sangre, John emprende un viaje a
+                Roma lleno de adrenalina estremecedora para pelear contra los asesinos más peligrosos del mundo.
+            </p>
+        </div>
+
+        <div class="tarjetas">
+            <img src="./media/spiderman.jpeg" alt="spiderman-no-way-home">
+            <h2>Spiderman</h2>
+            <p>
+                2021 2hs 28m
+                Tom Holland y Benedict Cumberbatch protagonizan esta aventura de Spider-Man, que debe
+                enfrentarse simultáneamente a sus mayores villanos.
+            </p>
+
+        </div>
+
+        <div class="tarjetas">
+            <img src="./media/el conjuro.jpeg" alt="el-conjuro">
+            <h2>El Conjuro 3</h2>
+            <p>
+                2021 1hs 51m
+                Uno de los casos más insólitos de los archivos de Ed y Lorraine Warren comienza con la batalla por
+                el alma de un niño, la cual los lleva a algo nunca antes visto
+            </p>
+        </div>
+
+
+
+    </main>
+    <section class="container">
+        <h2>Seguir viendo</h2>
+        <div class="row">
+            <div>
+                <p>
+                    Selección personal
+                </p>
+            </div>
+            <div>
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="./media/madagascar.jpg" class="img-propia d-block w-100" alt="madagascar">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./media/interstellar2.jpg" class="img-propia d-block w-100" alt="interstellar">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./media/serie sherlock.jpg" class="img-propia d-block w-100" alt="serie-sherlock">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>r
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                 
+            </div>
+        </div>
+
+
+    </section>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
